@@ -27,7 +27,6 @@ module.exports = function (grunt){
     })
     // carregando as  bibliotecas do grunt
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     // registrando as terefas a serem executadas pelo grunt
