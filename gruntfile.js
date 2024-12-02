@@ -70,5 +70,12 @@ module.exports = function (grunt){
         }
     }
     })
-    
+    // carregando as  bibliotecas do grunt
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-replace');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    // registrando as terefas a serem executadas pelo grunt
+    grunt.registerTask('build',['less:production','htmlmin:dist','replace:dev', 'replace:dist', 'uglify'])
 }
